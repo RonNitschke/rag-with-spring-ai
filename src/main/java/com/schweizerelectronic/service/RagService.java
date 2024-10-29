@@ -1,8 +1,11 @@
-package org.benaya.ai.rag.service;
+package com.schweizerelectronic.service;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.benaya.ai.rag.repository.DocumentRepository;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -12,24 +15,30 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import com.schweizerelectronic.repository.DocumentRepository;
 
 @Service
-@RequiredArgsConstructor
-@Slf4j
 public class RagService {
-    @Value("classpath:prompts/system-qa.st")
+	
+	private static final Logger LOG = LoggerFactory.getLogger(RagService.class);
+	
+    @Value("classpath:/prompts/system-qa.st")
     private Resource systemNdaPrompt;
+    
     @Value("${queries.top-k:2}")
     private int topK;
 
     private final DocumentRepository documentRepository;
-    public Prompt generatePromptFromClientPrompt(String clientPrompt) {
+    
+    
+    
+    public RagService( DocumentRepository documentRepository) {
+		this.documentRepository = documentRepository;
+	}
+	public Prompt generatePromptFromClientPrompt(String clientPrompt) {
         List<Document> docs = documentRepository.similaritySearchWithTopK(clientPrompt, topK);
         Message systemMessage = getSystemMessage(docs);
-        log.info("System message: {}", systemMessage.getContent());
+        LOG.info("System message: {}", systemMessage.getContent());
         UserMessage userMessage = new UserMessage(clientPrompt);
         return new Prompt(List.of(systemMessage, userMessage));
     }

@@ -1,4 +1,4 @@
-package org.benaya.ai.rag;
+package com.schweizerelectronic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

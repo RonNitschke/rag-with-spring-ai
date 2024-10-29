@@ -1,12 +1,4 @@
-package org.benaya.ai.rag.service;
-
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVRecord;
-import org.benaya.ai.rag.model.Paragraph;
-import org.springframework.ai.document.Document;
-import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Service;
+package com.schweizerelectronic.service;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -16,6 +8,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+import org.springframework.ai.document.Document;
+import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Service;
+
+import com.schweizerelectronic.model.Paragraph;
 
 @Service
 public class CsvParserService {

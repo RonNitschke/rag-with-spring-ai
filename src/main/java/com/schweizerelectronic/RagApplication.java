@@ -1,4 +1,4 @@
-package org.benaya.ai.rag;
+package com.schweizerelectronic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

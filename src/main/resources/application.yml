@@ -41,7 +41,7 @@ spring:
       pgvector:
         index-type: ${VECTORSTORE_PGVECTOR_INDEX-TYPE:hnsw}
         dimensions: ${VECTORSTORE_PGVECTOR_DIMENSIONS:768}
-        distance-type: cosine_distance
+        distance-type: COSINE_DISTANCE
 
 #      milvus:
 #        collection-name: ${MILVUS_COLLECTION_NAME:vector_store1}
