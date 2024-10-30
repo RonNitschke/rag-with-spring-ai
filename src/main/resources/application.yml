@@ -19,7 +19,7 @@ spring:
       max-attempts: 20
     ollama:
       embedding:
-        model: ${EMBEDDING_MODEL:nomic-embed-text}
+        model: ${EMBEDDING_MODEL:all-minilm}
         options:
           top-k: ${OLLAMA_EMBEDDING_TOP-K:10}
           num-thread: ${EMBEDDINGS_NUM_THREAD:8}
@@ -27,7 +27,7 @@ spring:
           num-batch: 768
           top-p: ${OLLAMA_EMBEDDING_TOP-P:0.5}
         enabled: true
-      base-url: ${OLLAMA_BASE_URL:http://host.docker.internal:11434}
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
       chat:
         model: ${CHAT_MODEL:mistral}
         options:

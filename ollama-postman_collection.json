@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "546e95a8-f79b-4f13-81b2-ff4c4db2c012",
-		"name": "ollama בדיקה",
+		"name": "ollama",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "9576700"
 	},
