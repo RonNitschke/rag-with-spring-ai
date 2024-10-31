@@ -17,7 +17,7 @@ done
 
 # Once ready, pull the required models
 ollama pull all-minilm:latest
-ollama pull mistral-small:latest
+ollama pull mistral-tiny:latest
 
 # Keep the server running in the foreground
 wait

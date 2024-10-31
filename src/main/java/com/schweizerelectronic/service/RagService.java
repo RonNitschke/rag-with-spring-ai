@@ -38,13 +38,34 @@ public class RagService {
 	public Prompt generatePromptFromClientPrompt(String clientPrompt) {
         List<Document> docs = documentRepository.similaritySearchWithTopK(clientPrompt, topK);
         Message systemMessage = getSystemMessage(docs);
+        
+        System.err.println("before log");
+        
         LOG.info("System message: {}", systemMessage.getContent());
+        
+        System.err.println("after log");
+        
         UserMessage userMessage = new UserMessage(clientPrompt);
-        return new Prompt(List.of(systemMessage, userMessage));
+        
+        Prompt prompt = new Prompt(List.of(systemMessage, userMessage));
+        
+        System.err.println("after prompt");
+        
+        return prompt;
     }
     private Message getSystemMessage(List<Document> similarDocuments) {
+    	
+    	System.err.println("In getSystemMessage, with similarDocuments = " + similarDocuments);
+    	
+    	
+    	
         String documents = similarDocuments.stream().map(Document::getContent).collect(Collectors.joining("\n"));
         SystemPromptTemplate systemPromptTemplate = new SystemPromptTemplate(systemNdaPrompt);
-        return systemPromptTemplate.createMessage(Map.of("documents", documents));
+        
+        Message message = systemPromptTemplate.createMessage(Map.of("documents", documents));
+        
+        System.err.println("Message created");
+        
+        return message;
     }
 }

@@ -35,11 +35,11 @@ services:
       - "11434:11434"
     entrypoint: ["/entrypoint.sh"]
     environment:
-      - MODELS=all-minilm:latest,mistral-small:latest
+      - MODELS=all-minilm:latest,mistral-tiny:latest
       - OLLAMA_DEBUG=true
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
       - ollama:/root/.ollama
-      
+    mem_limit: 40g
 volumes:
   ollama:

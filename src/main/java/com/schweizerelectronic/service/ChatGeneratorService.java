@@ -1,5 +1,7 @@
 package com.schweizerelectronic.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.ChatClient;
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.StreamingChatClient;
@@ -9,8 +11,10 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
 @Service
-
 public class ChatGeneratorService {
+	
+	private static final Logger LOG = LoggerFactory.getLogger(ChatGeneratorService.class);
+	
     private final StreamingChatClient streamingChatClient;
     private final ChatClient chatClient;
     
@@ -43,6 +47,13 @@ public class ChatGeneratorService {
         return getStreamingChatClient().stream(message);
     }
     public Flux<ChatResponse> generateStream(Prompt prompt) {
-        return getStreamingChatClient().stream(prompt);
+    	
+    	Flux<ChatResponse> chatResponse = getStreamingChatClient().stream(prompt);
+    	
+    	chatResponse
+        .doOnNext(response -> LOG.debug("Received ChatResponse: {}", response))
+        .subscribe();
+    	
+        return chatResponse;
     }
 }
