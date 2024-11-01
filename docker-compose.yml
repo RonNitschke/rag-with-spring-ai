@@ -35,7 +35,7 @@ services:
       - "11434:11434"
     entrypoint: ["/entrypoint.sh"]
     environment:
-      - MODELS=all-minilm:latest,mistral-tiny:latest
+      - MODELS=all-minilm:latest,tinyllama:latest
       - OLLAMA_DEBUG=true
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
