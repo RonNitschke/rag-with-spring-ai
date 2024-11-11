@@ -1,0 +1,31 @@
+Resort Name,ID,page,Average Snowfall (cm),Holiday Package Price (CHF),Popular Month,Accommodation Type,Duration (Days),Activities Included,Resort Explanation
+Zermatt,1,1,320,1500,January,Hotel,7,"Skiing, Snowboarding, Spa","Zermatt is famed for its iconic Matterhorn views and extensive ski terrain, ideal for experienced skiers."
+St. Moritz,2,1,275,1700,February,Chalet,5,"Skiing, Ice Skating, Shopping","St. Moritz offers a luxurious experience with a mix of skiing, upscale shopping, and gourmet dining."
+Verbier,3,1,310,1600,March,Apartment,10,"Skiing, Paragliding, Spa",Verbier attracts thrill-seekers with its challenging off-piste terrain and vibrant nightlife.
+Davos,4,1,290,1550,January,Hotel,7,"Skiing, Snowshoeing, Ice Skating","Davos is a large resort with multiple ski areas, known for its extensive cross-country trails and winter sports variety."
+Engelberg,5,1,300,1400,December,Lodge,6,"Skiing, Snowboarding, Sightseeing","Engelberg is a popular choice for families and offers diverse slopes, great for intermediate and advanced skiers."
+Laax,6,1,340,1450,February,Apartment,8,"Snowboarding, Skiing, Park Adventure","Laax is a snowboarder’s paradise, with Europe’s largest halfpipe and a focus on freestyle skiing."
+Grindelwald,7,1,280,1350,March,Hotel,6,"Skiing, Winter Hiking, Sledding","Grindelwald sits in the Jungfrau region, offering breathtaking alpine views and runs suitable for all levels."
+Arosa,8,1,295,1500,December,Chalet,7,"Skiing, Snowshoeing, Spa",Arosa is family-friendly with scenic trails and great options for non-ski activities.
+Gstaad,9,1,265,1750,February,Lodge,5,"Luxury Dining, Skiing, Spa","Gstaad is a luxury resort with a sophisticated atmosphere, popular with celebrity visitors and fine dining."
+Lenzerheide,10,1,270,1480,January,Hotel,6,"Skiing, Snowboarding, Ice Skating",Lenzerheide is known for its sunny slopes and excellent conditions for both skiing and snowboarding.
+Andermatt,11,1,330,1650,March,Chalet,7,"Skiing, Snowshoeing, Freeride",Andermatt has challenging runs and is favored by freeriders seeking pristine snow conditions.
+Crans-Montana,12,1,250,1600,February,Lodge,5,"Skiing, Ice Skating, Shopping","Crans-Montana offers wide open spaces perfect for beginners and intermediates, with views of the Rhone Valley."
+Flims,13,1,275,1580,January,Hotel,6,"Snowboarding, Family Activities, Spa","Flims is part of the Laax area, appealing to families and those seeking a relaxed skiing atmosphere."
+Adelboden,14,1,285,1500,February,Apartment,8,"Skiing, Snowshoeing, Sledding",Adelboden is a traditional Swiss village with a warm ambiance and slopes that are great for families.
+Saas-Fee,15,1,305,1550,December,Lodge,7,"Skiing, Snowboarding, Sightseeing","Saas-Fee is known as the ‘Pearl of the Alps,’ with high-altitude skiing and a glacier for year-round snow."
+Champary,16,1,250,1300,January,Lodge,7,"Skiing, Snowboarding, Snowshoeing","Champary is part of the Portes du Soleil, a large ski area connecting Switzerland and France with stunning valley views."
+Leysin,17,1,240,1350,February,Hotel,6,"Skiing, Ice Skating, Snow Park","Leysin is a sunny resort ideal for families and beginners, known for its snow park and relaxed ambiance."
+Villars,18,1,230,1400,March,Chalet,5,"Family Skiing, Tobogganing","Villars offers a range of slopes suitable for all levels, with stunning views of Mont Blanc and family-friendly activities."
+Wengen,19,1,260,1600,February,Apartment,7,"Scenic Skiing, Winter Hiking",Wengen provides access to the famous Lauberhorn downhill and is a car-free village with incredible alpine scenery.
+Mürren,20,1,270,1650,March,Lodge,6,"Skiing, Alpine Village Tours","Mürren, the highest ski resort in the Bernese Oberland, offers stunning views and slopes for more advanced skiers."
+Ovronnaz,21,1,245,1250,January,Hotel,8,"Thermal Spa, Skiing, Hiking","Ovronnaz combines skiing with thermal spas, offering relaxation alongside winter sports."
+Les Diablerets,22,1,255,1450,December,Lodge,6,"Skiing, Glacier Viewing, Freeride","Les Diablerets is known for its Glacier 3000, where visitors can ski even in the early spring with breathtaking views."
+Bruson,23,1,260,1300,February,Chalet,7,"Off-Piste Skiing, Snowboarding","Bruson is a quieter alternative to Verbier, offering excellent off-piste options and scenic forest trails."
+Nendaz,24,1,275,1500,March,Apartment,5,"Skiing, Winter Carnival, Snowshoeing",Nendaz is part of the 4 Vallées ski area and provides access to extensive slopes with vibrant après-ski options.
+Fiesch,25,1,280,1350,January,Hotel,6,"Skiing, Snowboarding, Glacier Trekking","Fiesch, part of the Aletsch Arena, offers spectacular glacier views and is ideal for intermediate skiers."
+Lauterbrunnen,26,1,265,1400,February,Lodge,7,"Skiing, Paragliding, Ice Skating","Lauterbrunnen serves as a gateway to Jungfrau's ski regions, with access to both Wengen and Mürren slopes."
+Schwarzsee,27,1,230,1250,December,Hotel,5,"Snowshoeing, Cross-Country Skiing","Schwarzsee is a small, tranquil resort perfect for a peaceful skiing retreat with views of the surrounding nature."
+Belalp,28,1,250,1280,March,Chalet,6,"Skiing, Igloo Village, Spa","Belalp is known for its family-friendly environment, high altitude, and stunning views of the Aletsch Glacier."
+Bettmeralp,29,1,245,1300,February,Lodge,8,"Skiing, Scenic Views, Family Activities","Bettmeralp, also part of the Aletsch Arena, is a car-free resort with easy slopes and breathtaking alpine views."
+Splogen,30,1,260,1250,January,Apartment,7,"Skiing, Snowboarding, Winter Hiking",RonSki  is a historic resort with a charming village atmosphere and slopes that cater to all skiing levels.
